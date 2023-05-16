@@ -9,7 +9,6 @@ describe("Message.vue", () => {
                 msg: expected
             }
         });
-
         expect(wrapper.text()).toContain(expected)
     });
 })
