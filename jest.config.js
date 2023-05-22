@@ -6,6 +6,6 @@
 module.exports = {
   preset: '@vue/cli-plugin-unit-jest',
   testEnvironment: 'jsdom',
-  "setupFiles": ["./tests/unit/setup.js"]
+  setupFiles: ["./tests/unit/setup.js"]
 
 }
