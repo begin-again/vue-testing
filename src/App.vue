@@ -4,19 +4,29 @@
     img(alt="Vue logo" src="./assets/logo.png")
     ToDoApp(msg="Welcome to Your Vue.js App")
     Parent()
+    Message(
+        :msg="msg"
+    )
 </template>
 
 <script>
 import ToDoApp from './components/ToDoApp.vue'
 import Nav from './components/Nav.vue'
 import Parent from './components/Parent.vue'
+import Message from './components/Message.vue'
 
 export default {
   name: 'App',
   components: {
     ToDoApp,
     Nav,
-    Parent
+    Parent,
+    Message
+  },
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
   }
 }
 </script>
